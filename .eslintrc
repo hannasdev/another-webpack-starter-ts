@@ -1,0 +1,59 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "prettier/@typescript-eslint",
+    "plugin:prettier/recommended",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:jest/recommended",
+  ],
+  "parserOptions": {
+    "ecmaVersions": 2018,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+    },
+  },
+  "rules": {
+    "eqeqeq": ["error", "always"],
+    "prefer-const": 2,
+    "strict": ["error", "global"],
+    "react/no-access-state-in-setstate": 2,
+    "react/no-depricated": 2,
+    "react/no-did-mount-set-state": 2,
+    "react/no-did-update-set-state": 2,
+    "react/no-direct-mutation-state": 2,
+    "react/no-redundant-should-component-update": 2,
+    "react/no-typos": 2,
+    "react/no-this-in-sfc": 2,
+    "react/no-unescaped-entities": 2,
+    "react/no-unsafe": 2,
+    "react/no-unused-state": 2,
+    "react/prefer-stateless-function": 2,
+    "react/react-in-jsx-scope": 2,
+    "react/require-render-return": 2,
+    "react/void-dom-elements-no-children": 2,
+    "react/jsx-key": 2,
+    "react/jsx-no-duplicate-props": 2,
+    "react/jsx-no-undef": [2, { "allowGlobals": true }],
+    "react/jsx-pascal-case": 2,
+    "react/jsx-uses-vars": 2,
+    "no-console": 1,
+    "no-template-curly-in-string": 2,
+    "key-spacing": 0,
+    "no-new-wrappers": 2,
+    "no-unused-expressions": 0,
+    "no-unused-vars": 2,
+    "prettier/prettier": 2
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+  },
+  "env": {
+    "jest/globals": true
+  },
+  "globals": {}
+}

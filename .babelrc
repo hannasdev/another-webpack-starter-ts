@@ -1,0 +1,35 @@
+{
+  "presets": [
+    "@babel/react",
+    "@babel/typescript",
+    [
+      "@babel/env",
+      {
+        "modules": false,
+        "targets": {
+          "node": "current",
+          "browsers": ["last 2 versions"]
+        },
+      },
+    ],
+  ],
+  "plugins": [
+    "@babel/transform-async-to-generator",
+    "@babel/proposal-class-properties", 
+    "@babel/proposal-object-rest-spread", 
+    [
+      "module-resolver",
+      {
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".ts",
+          ".tsx",
+        ],
+        "root": [
+          "./src"
+        ]
+      }
+    ]
+  ]
+}
