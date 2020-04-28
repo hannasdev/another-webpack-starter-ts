@@ -9,9 +9,9 @@
         "targets": {
           "node": "current",
           "browsers": ["last 2 versions"]
-        },
-      },
-    ],
+        }
+      }
+    ]
   ],
   "plugins": [
     "@babel/transform-async-to-generator",
@@ -24,7 +24,7 @@
           ".js",
           ".jsx",
           ".ts",
-          ".tsx",
+          ".tsx"
         ],
         "root": [
           "./src"
